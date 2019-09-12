@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB4tNE49hXlfpabb45OCz-9VZNFtx-Iwd0",
+            authDomain: "fighter-486a6.firebaseapp.com",
+            databaseURL: "https://fighter-486a6.firebaseio.com",
+            projectId: "fighter-486a6",
+            storageBucket: "fighter-486a6.appspot.com",
+            messagingSenderId: "768396032177",
+            appId: "1:768396032177:web:b0aa8ff1727961ff"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body>
+    <div id="mainAutoDiv">
+        <div id="autoDiv"> 100 </div>
+    </div>
+    <div id="mainManDiv">
+        <div id="manDiv"> 100 </div>
+    </div>
+
+    <img src="auto.gif" id="auto">
+    <img src="man.gif" id="man">
+
+    <div id="but">
+
+        <button id="man1" class="man" onclick="man1()">1</button>
+        <button id="man2" class="man" onclick="man2()">2</button>
+        <button id="man3" class="man" onclick="man3()">3</button>
+        <button id="man4" class="man" onclick="man4()">4</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
